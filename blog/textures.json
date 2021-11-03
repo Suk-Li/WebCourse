@@ -1,0 +1,19 @@
+{
+    "pioUrl": [
+        {"school-costume": "textures/a.png"},
+		{"school-costume": "textures/c.png"},
+		{"school-costume": "textures/e.png"},
+		{"school-costume": "textures/f.png"},
+		{"school-costume": "textures/h.png"},
+		{"school-costume": "textures/i.png"},
+		{"school-costume": "textures/k.png"},
+		{"school-costume": "textures/l.png"},
+		{"school-costume": "textures/m.png"},
+		{"school-costume": "textures/n.png"},
+		{"school-costume": "textures/o.png"},
+        {"pajamas-costume": "textures/pajamas-costume.png"},
+        {"pajamas-costume": "textures/dress-costume.png"},
+        {"pajamas-costume": "textures/dress-costume-brown.png"},
+        {"pajamas-costume": "textures/sakura-costume.png"}
+    ]
+}

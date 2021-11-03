@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>谜之屋</title>
+	<atom:link href="https://blog.shelike.me/feed/" rel="self" type="application/rss+xml" />
+	<link>https://blog.shelike.me</link>
+	<description></description>
+	<lastBuildDate>Sat, 23 Oct 2021 04:31:12 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.9</generator>
+	<item>
+		<title>挖矿指南和矿池推荐——博主半个月挖出20XMR并在币安交易的经历</title>
+		<link>https://blog.shelike.me/article/644</link>
+				<comments>https://blog.shelike.me/article/644#comments</comments>
+				<pubDate>Sun, 28 Mar 2021 14:21:40 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[挖矿]]></category>
+		<category><![CDATA[教程]]></category>
+		<category><![CDATA[牛逼]]></category>
+
+		<guid isPermaLink="false">https://blog.shelike.me/?p=644</guid>
+				<description><![CDATA[<p>我去年12月才接触到挖矿，当时使用的是哈希宝，有大概3MH/s的算力（XMR）。挖矿后可以直接支付宝提现，断断续续地挖矿四个月一共 ...</p>
+<p>The post <a href="https://blog.shelike.me/article/644">挖矿指南和矿池推荐——博主半个月挖出20XMR并在币安交易的经历</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></description>
+								<content:encoded><![CDATA[<p>我去年12月才接触到挖矿，当时使用的是哈希宝，有大概3MH/s的算力（XMR）。挖矿后可以直接支付宝提现，断断续续地挖矿四个月一共提现4万多，在提现排行榜的前20名。今年3月中旬才开始用c3pool挖矿。挖了15天，获得20个门罗币（XMR），经过币安交易所C2C交易后，收入29436元。</p>
+<p style="text-align: center;"><img class="" title="1616831894853709.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616831894853709.jpg" alt="Chrome.jpg" width="600" height="1335" /><br />
+<span style="display: block; text-align: center;">（这张是前几天截的图，最近矿池API被攻击导致算力显示不准确）</span></p>
+<p style="text-align: center;"><img class="" title="1616832574616360.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616832574616360.jpg" alt="Binance.jpg" width="600" height="1334" /></p>
+<p>第一次法币交易，收入接近三万。</p>
+<p>我拥有大概10MH/s的算力，曾经也想过自建矿池，也用过哈希宝这类小白产品，最终选择了c3pool。我将在下面详细说明为何做这个选择。</p>
+<p>接下来，我会介绍如何创建钱包，选择矿池，挖矿到交易所交易的整个流程。</p>
+<h3><span style="font-size: 20px;">挖矿流程</span></h3>
+<p>假设你已有设备，那么一般的挖矿流程是 创建钱包 → 选择矿池 → 挖矿 → 提现到钱包 → 交易所交易 ，经过这一套流程，就能将加密货币兑换为法币（法定货币，即人民币）。</p>
+<p>这里还有另一种选择，就是使用哈希宝的这类小白（傻瓜式）产品，把所有流程精简为 注册 → 挖矿 → 提现 。</p>
+<p>假如你的算力非常非常的低，或者怕麻烦，那么哈希宝可能适合你。交易所都要求最低提现20个USDT（约等于130元），各种买家也鱼龙混杂，对于小额多笔交易，冻结银行卡的风险会更大。</p>
+<p><strong>了解小白产品</strong><br />
+哈希宝（类似产品还有“一路赚钱”，更黑）<br />
+优点：</p>
+<ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+<li>傻瓜式挖矿软件，操作简单。提现方便快捷。</li>
+<li>至于有些人说的哈希宝偷算力，我用CPU来挖倒是没遇到。实测收益比全球第一大矿池 minexmr.com 还要高少许。</li>
+<li>公司为成都区块通科技有限公司，注册资本500万。跑路风险较低。</li>
+<li>平台被攻击会很快恢复，毕竟这么大个公司摆在这。</li>
+</ol>
+<p>缺点：</p>
+<ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+<li>提现手续费巨高。假设平台币“哈希”为1500元，提现15-30元需要手续费20%，三千到一万五需要手续费2%，七万五以上1%。真能挖到七万五，去哪家交易所不好？<br />
+<img class="aligncenter" title="1616833879317751.png" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616833879317751.png" alt="image.png" width="550" height="452" /></li>
+<li>客服态度比较差，不回消息是常态。这点有人也在知乎提到。</li>
+</ol>
+<p>了解这类产品了吗？接下来看看一般的挖矿流程。</p>
+<h3>创建钱包</h3>
+<p>我选择门罗币的钱包。有两种最常用的方式，一种使用官方钱包，需要同步高达100G的区块。另一种是使用MyMonero钱包，由MyMonero服务器同步区块。安全性肯定不如官方钱包了，但是门罗币比较少的话还是可以用的。几百个门罗币还是用官方钱包吧。MyMonero的转账手续费折合人民币0.1元/次，它帮你同步了100G的区块，这点手续费可以接受。</p>
+<p>为了尽量提高安全性，我的方法是创建一个虚拟机，里面安装Windows 10 LTSC，用命令行连接KMS激活，以后就用这个虚拟机专门做交易。</p>
+<p>前往<a title="MyMonero官网" href="https://mymonero.com/" target="_blank" rel="noopener noreferrer" rel="nofollow" >MyMonero官网</a>，下载Windows版本。创建钱包后把助记词手写到一张纸，千万别直接复制保存在任何一个地方。若想用手机来查看钱包，比较麻烦，它没有扫描二维码连接钱包的功能。我用的是安卓版本，助记词不能输入25位的中文，只能复制钱包地址，然后分别手打长达64位的查看密钥、支付密钥，打完后连不上服务器... CAO，我在电脑上直连是可以的，早知道我先开个VPN。心态崩了，放弃！</p>
+<p>（为什么不能复制？因为联网后就不安全了。即使是不联网状态下复制，完成后删除手机剪贴板，但你不知道是XX软件的某个员工还是黑客已经记录下来，联网时向服务器发送。）</p>
+<h3>选择矿池</h3>
+<p>在<a title="这个网站" href="https://miningpoolstats.stream/monero" target="_blank" rel="noopener noreferrer" rel="nofollow" >这个网站</a>可以查看热门的XMR矿池列表。我最开始使用了minexmr.com，抽水1%。因为我的算力比较高，后来我想自建矿池。去Github搜了几个矿池项目，也许是我技术太差，没有一个能搭建起来的。这时看到了c3pool，说是0抽水，我就随便放了个机器在里面试试。这一试不要紧，我发现官网上显示的算力比 minexmr.com 以及哈希宝（用的是f2pool）高了30%-100%！这不会是假的吧。我就测试了几天，把币提到钱包，最后得出结论：c3pool牛逼！</p>
+<p>根据c3pool的介绍，这个矿池会在多种算法的多个币中，选择利润最高的币去挖，因此收益高于只挖一个币的传统矿池。这，我100%选择c3pool啊。</p>
+<p><strong>c3pool（猫池）（注：本文写于猫池改版前）</strong><br />
+优点：</p>
+<ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+<li>同样的机器，收益会高出30%-100%。</li>
+<li>客服态度也太好了吧。前面提到的哈希宝客服态度有多差，猫池的客服态度就有多好，真是鲜明的对比啊！发消息，问问题基本都是秒回。猫池老板说整个矿池就他一个技术兼客服。他仿佛24小时坐在电脑前一样（当然，仅限他不忙的时候）。</li>
+</ol>
+<p>缺点：</p>
+<ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+<li>项目为个人兴趣使然。能不能坚持下去，完全靠猫总（猫池老板）个人。他说公司的业务不涉及矿池，这个矿池完全是自己的兴趣。</li>
+<li>经常被攻击。3月初的攻击导致每个矿池节点都出问题，每天断几个小时。对普通人来说就是几个小时的电费损失，对矿老板来说，要是没有及时切换矿池的话损失就大了。猫总说只要有收益被影响都会给补偿。不过也不是每次都有，也许因为这不是猫池导致的问题。3月20几号也有一次攻击，但这一次猫总补偿了很多。最近矿池节点全部掉线的情况没有了，并且世界每个区域都有几个矿池服务器。注意：假如矿池被攻击了，马上换<a href="https://moneroocean.stream/" title="https://moneroocean.stream/" rel="noopener noreferrer" target="_blank" rel="nofollow" >这个同款矿池</a>，因为补偿不是每次都有。有1MH以上的算力也可以问猫总要专线，不怕被攻击。</li>
+<li>可能是被攻击导致稳定性不太好。我以前用AWS来挖矿，在后台看到这样的统计：<br />
+<img class="aligncenter" src="https://blog.shelike.me/wp-content/uploads/image/20210328/1616940604666379.jpg" title="1616940604666379.jpg" alt="1616940604666379.jpg"/><br />
+只要在挖就有收益，但是实际上挖矿时不时断一下。即使如此，收益还是要比其他矿池多很多。
+</li>
+</ol>
+<h3>挖矿</h3>
+<p>c3pool官网有一键挖矿脚本，直接用就好了。有什么问题问客服。</p>
+<p>说说我遇到的问题：使用官网提供的一键脚本，挖矿时CPU占用率只有50%。我通过修改配置，让CPU占用100%，但是收益却减半了。这种情况多发生在英特尔的处理器上。因为处理器的全部核心已经用完，剩下的50%是超线程技术。让CPU同时处理两倍的工作量，效率就下降了。</p>
+<p><strong>注意：</strong>计算收益时，不要看挖矿软件显示的算力，不同币种不同算法下的算力没有任何可比性。算力以矿池网站上显示的为准，并且网站也有预估日收入功能（实际收入没有那么多）。</p>
+<h3><span style="font-size: 20px;">提现到钱包</span></h3>
+<p>在c3pool可以设置自动提现金额，最小0.003门罗币。有时候达到了限额也没有支付，因为支付队列太多人了。不用担心，迟早会付的。</p>
+<h3><span style="font-size: 20px;">交易所交易</span></h3>
+<p>这里我选择的是币安。因为我看了各种网站，包括知乎、贴吧，大家都说火币冻卡风险大。也有相反的观点，说每个交易所都有冻卡风险，火币冻卡风险大是因为它是最大的交易所。既然都有冻卡风险，那就选择交易手续费最低的币安吧。币币交易只需手续费0.1% 。</p>
+<p>交易所交易又分为几个流程：充值门罗币到现货账户 → 将XMR换成稳定币USDT（币币交易） → 到自选区选择合适买家交易（法币交易） 。</p>
+<h4><span style="font-size: 18px;">注册币安和充值XMR</span></h4>
+<p>首先注册币安，通过这个<a href="https://www.binance.com/zh-CN/register?ref=OTBJRE5H" target="_blank" rel="noopener noreferrer" rel="nofollow" >推荐链接</a>注册可以在每笔币币交易时获得20%的返现。据说还有40%返现的注册链接，但对邀请人的要求比较高。我到处找没找到。Google Play商店很多人在币安APP下评论40%返现的链接，没一个是真的。</p>
+<p>注册后完成实名验证，<strong>身份证注意打上“仅限币安实名认证”的水印</strong>，然后再完成人脸识别。</p>
+<p>然后点击右上角的钱包，选择现货账户，搜索XMR，选择充值。</p>
+<p><img title="1616840478920894.png" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616840478920894.png" alt="image.png" /></p>
+<p>右边就会出现一个供你充值的钱包地址。从你的钱包转账到这个地址，5分钟左右到账。</p>
+<p>既然要将门罗币充值到币安，那为什么不直接在矿池填写币安的地址呢？因为那个地址并非一定不变，交易所也可能会暂停XMR的充币和提币业务。</p>
+<p>我需要交易20个XMR。我比较谨慎，先转0.0001试试，4分钟后到账。然后想把剩下的19.9999也转过来，但钱包显示1.5999被锁定。我发现锁定的金额正好是一次收款的金额。这...支付宝转账一块钱，你不能锁我一万块啊... 这可能是从那个区块中拿出0.0001，需要等待区块同步。但是我明明有更小的区块。我就先把18.4转过去了。成功后发现剩下的1.5999解锁了，那就转过去吧。</p>
+<p><img title="1616840703949903.png" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616840703949903.png" alt="image.png" /></p>
+<h4><span style="font-size: 18px;">XMR兑换USDT（币币交易）</span></h4>
+<p>收到转账后，回到现货账户，点击交易，选择XMR/USDT</p>
+<p><img title="1616841211404332.png" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616841211404332.png" alt="image.png" /></p>
+<p>进入到交易页面</p>
+<p><img title="1616842882812658.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616842882812658.jpg" alt="1.jpg" /></p>
+<p>参考当前的市价和价格走势，把价格稍微标高一点。比如市价221.22，可以标222.00。不急卖的话可以再高点。不要用市价交易，比较亏。</p>
+<p><img title="1616842123744663.png" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616842123744663.png" alt="image.png" /></p>
+<p>我在晚上标了个223.00，结果到第二天都没人交易。改为222.22后几分钟就卖出了</p>
+<p><img title="1616843081823445.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616843081823445.jpg" alt="QQ截图20210327013558.jpg" /></p>
+<p><img title="1616843387122251.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616843387122251.jpg" alt="QQ截图20210327190757.jpg" /></p>
+<h4><span style="font-size: 18px;">法币交易</span></h4>
+<p>从右上角的钱包菜单中，找到C2C账户，在USDT栏目选择“划转”，从现货账户到C2C账户。</p>
+<p>从右上角的个人菜单中，找到账户安全，点击左边的收款方式，添加你不常用的收款方式。千万别用常用支付宝、微信、银行卡来收款。万一被冻结了就麻烦了。使用一个不常用的银行卡，小号支付宝/微信。冻卡是小概率事件，就算真的冻卡了，一般也不会冻结本人名下的所有支付方式，所以这样做是有意义的，不至于导致你原有的钱也用不了。</p>
+<p>完成后点击“卖”，就可以选择买家进行交易了。这一步一定要在手机上进行，因为只有币安APP可以查看买家的注册时间、首次交易时间。绝大多数账户都是最近3个月才注册的新号，有一定安全风险。尽量选择交易时间久的账户，因为假如有卖家收到黑钱被冻卡，买家的号应该早被封了。当时最高价6.65，我看那个买家是才注册不到半个月的号，有可能就是奔着洗钱来的。接下来标6.64的账号都比较新，我就选择了6.63，离首次交易时间有半年以上的一个买家。我认为为了安全牺牲一些钱是值得的。</p>
+<p style="text-align: center;"><img class="" title="1616845671271905.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616845671271905.jpg" alt="Screenshot_20210327-101541_Binance.jpg" width="600" height="1334" /></p>
+<p>买家不到3分钟就把钱转给我了，这里务必核对买家名字和转账过来的人的名字是否相同。核对名字和金额，确认无误后点击“确认收款”。</p>
+<p>买家还发了一条短信提醒我<br />
+<img class="aligncenter" title="1616845895700502.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616845895700502.jpg" alt="Screenshot_20210327-100621_Messages.jpg" width="600" height="1334" /><br />
+整个交易流程非常迅速，丝毫没有拖泥带水。收入29436元。</p>
+<p style="text-align: center;"><img class="" title="1616845954873475.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616845954873475.jpg" alt="Binance.jpg" width="600" height="1334" /></p>
+<p>XMR当时价格是1437元，假如直接换成人民币的话是28740元。但是经过交易所换成USDT再换成人民币，最后收入29436元，多了696元。</p>
+<p><img title="1616846188431363.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210327/1616846188431363.jpg" alt="QQ截图20210327102355.jpg" /></p>
+<p>至此，我的第一次交易就完成了。<br />
+有人说收款后马上把钱领出来，然后再存入另一张银行卡，可以切断资金的联系。但也有人说这样会加大洗钱的嫌疑。我打算直接拿来花，不打算领出来。</p>
+<h4><span style="font-size: 18px;">为什么不选择私下交易</span></h4>
+<p>不经过平台，直接在挖矿群中喊一声“有谁收门罗币”。确实可行，但是风险不见得会低。</p>
+<ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+<li>你怎么知道买家的钱是干净的？问他要收支记录吗？你一样可以在交易所发卖币的广告，同样可以要求买家给收支记录。</li>
+<li>你先转币还是对方先转钱？这种交易只有一方有保障。交易所相当于一个担保人的身份，确保你不会被骗。有人在闲鱼卖币，币转过去了，但是直接被拉黑。又或者钱过去了，币却没到。</li>
+<li>你按照什么样的价格卖给买家？直接把XMR换算成人民币的金额与XMR换USDT再换人民币相比会有波动，往往是换USDT再换人民币价格要高。</li>
+</ol>
+<p>当然，假如能线下当面交易的话可能会更好，双方当面沟通。</p>
+<h3>写在最后</h3>
+<p>选择一个合适的矿池，一个合适的交易所，一个合适的买家很重要。会不会有人说，最重要的可能是有10MH的算力。嗯，这个确实重要。能获得这个算力纯属巧合了，掌管着一些小型超算。</p>
+<h3>后记</h3>
+<p>我3月底卖出时是1437元。现在是4月底，短短一个月，门罗币已经涨到了2309元。别卖了，囤起来吧！</p>
+<hr/>
+<p>再后来，我明白了什么是牛市和熊市，也玩过几次合约，第一次收益率120%，第二次直接爆了，共损失五千。后来短线操作ETH和XMR又挣回来了。所以说别碰合约。我还是以长线投资为主，目前轻仓，未来几个月看熊，年底看牛。</p><p>The post <a href="https://blog.shelike.me/article/644">挖矿指南和矿池推荐——博主半个月挖出20XMR并在币安交易的经历</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></content:encoded>
+							<wfw:commentRss>https://blog.shelike.me/article/644/feed/</wfw:commentRss>
+		<slash:comments>37</slash:comments>
+							</item>
+		<item>
+		<title>2021春节福利：送AWS组织子账号（可开AGA）、文献搜索账号（知网、万方、IEEE等）</title>
+		<link>https://blog.shelike.me/article/629</link>
+				<comments>https://blog.shelike.me/article/629#comments</comments>
+				<pubDate>Tue, 09 Feb 2021 13:32:13 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[免费]]></category>
+		<category><![CDATA[福利]]></category>
+
+		<guid isPermaLink="false">https://blog.shelike.me/?p=629</guid>
+				<description><![CDATA[<p>准备到春节了，祝各位访客学业有成，功成名就，事事顺利，财源滚滚！ 我为大家准备了两个福利： AWS组织子账号（限量6个） 我的一个 ...</p>
+<p>The post <a href="https://blog.shelike.me/article/629">2021春节福利：送AWS组织子账号（可开AGA）、文献搜索账号（知网、万方、IEEE等）</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></description>
+								<content:encoded><![CDATA[<p>准备到春节了，祝各位访客学业有成，功成名就，事事顺利，财源滚滚！</p>
+<p>我为大家准备了两个福利：</p>
+<ol>
+<li>AWS组织子账号（限量6个）
+<p>我的一个AWS组织内有800美元优惠码，组织内所有的子账号共享这800美元。子账号是一个完整的AWS账号，以你的邮箱来登录AWS，可以自由开实例。不能访问AWS Support。</p>
+<p>想开AWS Global Accelerator（AGA）看这里：<a href="https://blog.shelike.me/article/416" title="打开谷歌就像打开百度一样快：AWS Global Accelerator">打开谷歌就像打开百度一样快：AWS Global Accelerator</a></p>
+<p>能用多久，取决于送出去的几个人用多少。但假如每月使用量达100美元，为了保证公平性，我会删号。要是大家都很节约，那么800美元就能用很久。</p>
+<p>假如想要AWS组织子账号，请在评论时留下AWS账号绑定的邮箱，否则默认绑定到评论的邮箱。<br />
+哪天收到标题为“AWS Account on Hold”的邮件，说明余额用完了~ 这个邮箱不能再注册AWS，所以不建议用常用邮箱。无论如何，注意做好数据备份。</li>
+<li>文献搜索账号（限量10个）
+<p>通过这个账号，可以访问某大学VPN，免费下载知网、万方、IEEE等学术网站的文章。</li>
+</ol>
+<p>以上账号都不保证能用多久，免费的东西你想用多久~</p>
+<p>大佬就不要凑热闹了，留给有需要的人。</p>
+<p>评论时留下你的新年祝福和想要的福利。活动于2月26号23:59结束，福利于28号23:59前统一发放。眼熟的直接送，然后再以评论的先后顺序送。代理和境外IP会直接忽略。</p>
+<p><strong>福利已全部发完！祝各位新的一年财源滚滚，心想事成！</strong></p><p>The post <a href="https://blog.shelike.me/article/629">2021春节福利：送AWS组织子账号（可开AGA）、文献搜索账号（知网、万方、IEEE等）</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></content:encoded>
+							<wfw:commentRss>https://blog.shelike.me/article/629/feed/</wfw:commentRss>
+		<slash:comments>25</slash:comments>
+							</item>
+		<item>
+		<title>自建游戏加速有多难？UU加速器原理：加速全靠中转</title>
+		<link>https://blog.shelike.me/article/614</link>
+				<comments>https://blog.shelike.me/article/614#comments</comments>
+				<pubDate>Tue, 26 Jan 2021 12:41:23 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[原理]]></category>
+		<category><![CDATA[游戏]]></category>
+
+		<guid isPermaLink="false">https://blog.shelike.me/?p=614</guid>
+				<description><![CDATA[<p>我在去年7-9月一直使用AWS Global Accelerator（AGA）以及华为云香港做GTA5的加速器。AGA走的是优化的 ...</p>
+<p>The post <a href="https://blog.shelike.me/article/614">自建游戏加速有多难？UU加速器原理：加速全靠中转</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></description>
+								<content:encoded><![CDATA[<p><span style="font-size: 16px;">我在去年7-9月一直使用AWS Global Accelerator（AGA）以及华为云香港做GTA5的加速器。AGA走的是优化的163线路，华为云走 CN2，但AGA实际使用效果比CN2的华为云香港要好。</span></p>
+<p><span style="font-size: 16px;">以下是晚高峰20:00左右的UDP Ping测试：（左华为云，右AGA）</span></p>
+<p><img title="1611292353125958.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210122/1611292353125958.jpg" alt="aga和华为云cn2测udpping.jpg" /></p>
+<p><span style="font-size: 16px;">后来回学校了，学校的联通用哪的服务器都有不定时的丢包，就买了UU加速器，没有再用AGA和华为云。今年1月份回家后，连上AGA，发现玩游戏总是一阵一阵的丢包，华为云香港也是。最终还是得买UU加速器。</span></p>
+<h3><span style="font-size: 20px;">网易UU加速器是如何工作的？</span></h3>
+<p><span style="font-size: 16px;">你以为是网易买了极好的线路，让你直连香港零丢包？</span><br />
+<span style="font-size: 16px;">不是这样，是先连接网易的国内中转服务器，再由中转服务器连接香港。</span></p>
+<p><span style="font-size: 16px;">来看看UU加速器最终的出口IP是什么：</span></p>
+<p><img title="1611292816211108.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210122/1611292816211108.jpg" alt="20210122130130.jpg" /></p>
+<p><span style="font-size: 16px;">103.129.252.238，直接Ping这个IP会怎样？</span></p>
+<p><img title="1611658062120463.png" src="https://blog.shelike.me/wp-content/uploads/image/20210126/1611658062120463.png" alt="image.png" class="aligncenter" /></p>
+<p><span style="font-size: 16px;">38%丢包，这还能玩吗？</span><br />
+<span style="font-size: 16px;">然而网易UU加速器里面显示26ms：</span></p>
+<p><img title="1611292886929295.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210122/1611292886929295.jpg" alt="20210122130521.jpg" /></p>
+<p><span style="font-size: 16px;">在游戏内部也是丝滑流畅，没有任何卡、丢包的现象。</span></p>
+<p><span style="font-size: 16px;">用360的流量防火墙查看UU建立的连接，全是国内机房：</span></p>
+<p><img title="1611658100842149.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210126/1611658100842149.jpg" alt="20210126183443.jpg" /></p>
+<p><span style="font-size: 16px;">毫无疑问UU加速器连接了国内机房，用它们做了一个中转才连接到香港，并且是内网中转。用一个什么阿里云广州中转香港是肯定没有这个连接质量的。</span></p>
+<h3><span style="font-size: 20px;">如何测试本地到服务器的UDP Ping？</span></h3>
+<p><span style="font-size: 16px;">FPS游戏玩家间都是使用UDP进行连接，比如GTA5：</span></p>
+<p><img title="1611659773369364.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20210126/1611659773369364.jpg" alt="20210126183346.jpg" /></p>
+<p><span style="font-size: 16px;">而常规的Ping是工作在应用层的ICMP Ping，把它当成是UDP连接的丢包并不准确。当然假如ICMP Ping丢包非常厉害，那UDP Ping也好不到哪去。上面Ping UU加速器的IP时使用了IMCP Ping，因为我怎么可能操作网易的服务器嘛。</span></p>
+<p><span style="font-size: 16px;">若想测UDP Ping，服务器端运行</span></p>
+<pre class="brush:bash;toolbar:false">yum -y install socat
+socat -v UDP-LISTEN:1000,fork PIPE</pre>
+<p><span style="font-size: 16px;">本地（Windows）下载 <a href="https://file.bugxia.com/s/H5sCKJ2FMWpj5fE" rel="noopener noreferrer" target="_blank" rel="nofollow" >UDP Ping 工具</a>，然后运行cmd，输入</span></p>
+<pre class="brush:bash;toolbar:false">D:\udpping.exe IP地址 1000</pre>
+<p><span style="font-size: 16px;">就能得到结果。<br />
+</span></p>
+<p><span style="font-size: 16px;"> </span></p>
+<p><span style="font-size: 16px;">对于UDPspeeder这类的多倍发包工具，我个人测试效果并不理想。也许丢包是一个时间段内丢包，比如1秒到2秒内都丢包了，那在这时间段内发10个包也是没有用的。</span></p>
+<p><span style="font-size: 16px;">所以，要想玩FPS游戏，还是乖乖掏钱买大厂的加速器吧。</span></p>
+<hr/>
+<p><span style="font-size: 14px;">Python编写的UDP Ping工具来自<a href="https://github.com/wangyu-/UDPping" rel="noopener noreferrer" target="_blank" rel="nofollow" >https://github.com/wangyu-/UDPping</a>，Windows端的工具来自<a href="https://bugxia.com/1669.html" rel="noopener noreferrer" target="_blank" rel="nofollow" >https://bugxia.com/1669.html</a>。</span></p><p>The post <a href="https://blog.shelike.me/article/614">自建游戏加速有多难？UU加速器原理：加速全靠中转</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></content:encoded>
+							<wfw:commentRss>https://blog.shelike.me/article/614/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+		<item>
+		<title>利用 AWS Organizations 在多个 AWS 账户间共享优惠码</title>
+		<link>https://blog.shelike.me/article/482</link>
+				<comments>https://blog.shelike.me/article/482#respond</comments>
+				<pubDate>Fri, 08 Jan 2021 13:19:13 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[AWS]]></category>
+		<category><![CDATA[教程]]></category>
+
+		<guid isPermaLink="false">https://blog.shelike.me/?p=482</guid>
+				<description><![CDATA[<p>AWS的优惠码有不少限制，比如某些优惠码每个账户只能使用两次。而利用 AWS Organizations 将这些账户加入一个组织， ...</p>
+<p>The post <a href="https://blog.shelike.me/article/482">利用 AWS Organizations 在多个 AWS 账户间共享优惠码</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></description>
+								<content:encoded><![CDATA[<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">AWS的优惠码有不少限制，比如某些优惠码每个账户只能使用两次。而利用 AWS Organizations 将这些账户加入一个组织，账户所拥有的优惠码就会累计进一个“积分池”，组织内的所有账户都能使用这些优惠码。同时，组织管理员可创建无需绑定信用卡的成员账户，成员账户也可以再兑换优惠码。</span></p>
+<h3><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 20px;">如何使用 AWS Organizations</span></h3>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">登录账户后，在右上角点击你的AWS名称，选择“My Organization”。</span></p>
+<p><img src="https://blog.shelike.me/wp-content/uploads/image/20210108/1610110774741977.png" title="1610110774741977.png" alt="image.png"class="aligncenter"/></p>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">选择“创建组织”</span></p>
+<p><img src="https://blog.shelike.me/wp-content/uploads/image/20210108/1610110869536062.png" title="1610110869536062.png" alt="image.png"/></p>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">再次选择“创建组织”<br /></span></p>
+<p><img src="https://blog.shelike.me/wp-content/uploads/image/20210108/1610110897514748.png" title="1610110897514748.png" alt="image.png"/></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">前往邮箱完成邮件验证，就可以创建或邀请账户了。</span></p>
+<h3><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 20px;">官方文档</span></h3>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">以下所有的“服务抵扣金额”、“积分”、“优惠码”，均指“credits”。</span><br />
+<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">在AWS文档的 </span><a style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;" href="https://docs.aws.amazon.com/zh_cn/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html#credits-for-orgs" target="_blank" rel="noopener noreferrer" rel="nofollow" ><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">AWS 账单和成本管理</span></a><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"> 部分针对AWS Organizations 的整合账单“跨单个和多个账户应用 AWS 服务抵扣金额”的规定，给出了这样的描述：</span></p>
+<ul>
+<li>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">账单周期从每月的第一天开始。</span></p>
+</li>
+<li>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">如果账户在某月的第一天属于某个不属于某个组织的个人，但在当月晚些时候加入组织，则 AWS 会将该个人拥有的积分应用到该个人针对该月的使用量的账单。下个月，AWS 将服务抵扣金额应用到加入组织。</span></p>
+</li>
+<li>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">如果账户在月份的第一天属于某个组织，则 AWS 会将付款人账户或任何关联账户兑换的服务抵扣金额应用于组织的账单，而不论账户所有者在当月晚些时候是否离开组织。</span></p>
+</li>
+<li>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">如果个人在某个月内离开组织，AWS 将从下个月的第一天开始针对个人账户应用服务抵扣金额。</span></p>
+</li>
+<li>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">服务抵扣金额在当月的任何时刻与加入组织的所有账户共享。但是，组织的共享积分池仅包含自该月第一天以来已成为组织的一部分的账户的积分。</span></p>
+</li>
+</ul>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">“如果账户在某月的第一天属于某个不属于某个组织的个人”，AWS酱的机器翻译真是神奇，原句是“If an account is owned on the first day of the month by an individual who is not part of an organization”，翻译过来是“如果一个账户由当月第一天不属于某个组织的个人拥有”，或者“如果一个账户当月第一天属于个人，不属于组织”。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">查阅了各种文档，并且根据个人的使用经验总结 AWS Organizations 的部分规定和限制如下：</span></p>
+<ul class=" list-paddingleft-2" style="list-style-type: disc;">
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">独立账户在当月加入组织，优惠码不会共享进组织的积分池，次月1号起优惠码才会与组织共享。</span></li>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">组织中的账户若离开组织，优惠码在当月仍与组织共享，次月1号才取消共享。</span></li>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">组织内的成员数量默认最多为4个。（我的组织已经添加了6个账户还能继续添加，看来AWS文档中写的默认配额是错误的）</span></li>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">组织管理员若创建无需信用卡的新账户，需在该账户填写信用卡信息让其成为独立账户或关停账户90天后，才能将该账户从组织中移除。</span></li>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">组织管理员创建无需信用卡的新账户时，填写的邮箱会收到可用免费套餐的邮件，实际上不适用免费套餐。</span></li>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">若有多个适用免费套餐的账户加入组织，免费套餐会共享但不会叠加。</span></li>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">无需信用卡的新账户每个区默认配额为8或32。（默认显示为5，代表该区域未解锁。开一台机器，配额刷新后为8或32）</span></li>
+</ul>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">AWS文档中的例子：</span></p>
+<ul class=" list-paddingleft-2" style="list-style-type: disc;">
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">假设 Susan 在某月的第一天拥有一个账户，然后在该月内加入了一个组织。假设她在加入组织后的任意一天兑换了服务抵扣金额，AWS 会将她的服务抵扣金额应用于她的账户从该月第一天到加入组织那天之间产生的使用量。但是，从下个月的第一天起，AWS 会将服务抵扣金额应用于该组织的账单。如果 Susan 离开组织，她兑换的服务抵扣金额也会应用于组织的账单，直到她离职后次月的第一天。之后，AWS 会将 Susan 的服务抵扣金额应用于她的账单而不是组织的账单。</span></li>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">假设 Susan 在 1 月 1 日拥有单个账户，并在 1 月 11 日加入一个组织。如果 Susan 在 1 月 18 日兑换了 100 美元的服务抵扣金额，AWS 会将这些服务抵扣金额应用于她的账户在 1 月产生的使用量。从 2 月 1 日开始，Susan 的积分应用到组织的整合账单。如果 Susan 还有 50 美元的服务抵扣金额，并在 4 月 16 日退出组织，她的服务抵扣金额将应用于组织 4 月份的整合账单。从 5 月开始，Susan 的积分将应用到个人账户。</span></li>
+</ul>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">在组织的积分池中，使用积分的优先级如下：<br />
+</span></p>
+<ol class=" list-paddingleft-2">
+<li>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">即将过期</span></p>
+</li>
+<li>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">最小数量的适用产品</span></p>
+</li>
+<li>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">最旧的服务抵扣金额</span></p>
+</li>
+</ol>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">举例：</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">Jorge 有两个服务抵扣金额，服务抵扣金额一是 10 美元，于 2019 年 1 月到期，可用于 Amazon S3 或 Amazon EC2。服务抵扣金额二是 5 美元，于 2019 年 12 月到期，只能用于 Amazon EC2。Jorge 有足够的 AWS 费用来使用所有积分，AWS 优先选择使用积分一，因为它的过期时间比积分二更早。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">将积分应用到使用量的优先级：</span></p>
+<ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">拥有服务抵扣金额的账户</span></li>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">具有最高支出的账户</span></li>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">该账户中具有最高支出的服务</span></li>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">在该服务内具有最高支出的产品</span></li>
+</ol>
+<p style="font-family: inherit; color: inherit; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 1em; line-height: 1.5em;"><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">举例：</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">Jorge 有两个服务抵扣金额可供使用。服务抵扣金额一是 10 美元，于 2019 年 1 月到期，可用于 Amazon S3 或 Amazon EC2。服务抵扣金额二是 5 美元，于 2019 年 12 月到期，只能用于 Amazon EC2。Jorge 有两笔 AWS 费用：为 Amazon EC2 缴纳 100 美元，为 Amazon S3 缴纳 50 美元。AWS 对 Amazon EC2 费用应用服务抵扣金额一（1 月份到期），这样他就剩下 90 美元的 Amazon EC2 费用和 50 美元的 Amazon S3 费用。AWS 对 Amazon EC2 使用量的剩余 90 美元应用服务抵扣金额二，这样 Jorge 必须为 Amazon EC2 支付 85 美元，为 Amazon S3 支付 50 美元。现在他已用完所有服务抵扣金额。</span></p>
+<h3><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 20px;">个人踩坑</span></h3>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">我刚开始用 AWS Organizations 时踩过一个坑。我的账户1有1000美元的优惠码，过期时间2022/12/31，适用服务“AWS Global Accelerator（AGA）”；账户2有600美元的优惠码，过期时间2021/06/31，不适用服务AGA。我于2020年12月将它们添加到一个组织中，那么在2021年1月，对于AGA外的服务，应当先消耗账户2的优惠码，因为它最快到期，对于AGA这一服务，消耗账户1的优惠码。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">但是账单更新后不太对劲，它们所拥有的优惠码分别应用在了各自的账户上，就像没在一个组织一样。我选择“Account and billing support”的“Billing, Credits &amp; Promotions”类别提交了工单，得到了莫名其妙的回复：</span></p>
+<p><img title="1610103748940721.png" src="https://blog.shelike.me/wp-content/uploads/image/20210108/1610103748940721.png" alt="image.png" /></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">且不说2021打成2020，毫无疑问他说的条件我都满足。两天才回复，回复完还把我工单关了。突然想到我有开发者技术支持，就提交了“Technical support”工单。也是两天才回复，不过这次的回答就比较完美了：</span></p>
+<p><img title="1610103935732459.png" src="https://blog.shelike.me/wp-content/uploads/image/20210108/1610103935732459.png" alt="image.png" /><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">因为我的账户1已经有了一个优惠码，即使积分池有比账号1的优惠码更早到期的优惠码，仍然是优先对账号1使用账号1的优惠码。若想先使用账户2即将到期的优惠码，解决方法也很简单：直接在账户2开机器就行了。</span></p>
+<h3><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 20px;">AWS文档中的错误</span></h3>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">我在2020年12月24日创建了一个组织，同一天另一个拥有优惠码的帐户加入了我的组织。</span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">根据AWS文档中的描述：“如果一个账户当月第一天属于个人，不属于组织，但在当月晚些时候加入组织，则 AWS 会将该个人拥有的积分应用到该个人针对该月的使用量的账单。”</span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">但在2020年12月的账单，该账号使用了我的优惠码。</span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">我开工单告诉AWS，10天后回复我：文档上是错误的。“付款人账户（组织管理员）的积分将抵扣12月关联账户的所有费用，因为这些费用被视为付款人账单的一部分。”</span></p>
+<p><img src="https://blog.shelike.me/wp-content/uploads/image/20210120/1611133614483225.png" title="1611133614483225.png" alt="image.png"/></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">客服告诉我文档会尽快更新</span></p>
+<p><img src="https://blog.shelike.me/wp-content/uploads/image/20210120/1611133647363634.png" title="1611133647363634.png" alt="image.png"/></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">AWS内部的管理貌似挺混乱的...</span></p>
+<h3><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 20px;">参考</span></h3>
+<p><a style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;" href="https://docs.aws.amazon.com/zh_cn/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html" target="_blank" rel="noopener noreferrer" rel="nofollow" >AWS 账单和成本管理 - AWS Organizations 的整合账单 - 服务抵扣金额</a><br />
+<a style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;" href="https://aws.amazon.com/cn/premiumsupport/knowledge-center/consolidated-billing-credits/" target="_blank" rel="noopener noreferrer" rel="nofollow" >如何在 AWS Organizations 中计算组织的服务抵扣金额和促销？</a><br />
+<a style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;" href="https://docs.aws.amazon.com/zh_cn/organizations/latest/userguide/orgs_introduction.html" target="_blank" rel="noopener noreferrer" rel="nofollow" >AWS Organizations 用户指南</a></p><p>The post <a href="https://blog.shelike.me/article/482">利用 AWS Organizations 在多个 AWS 账户间共享优惠码</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></content:encoded>
+							<wfw:commentRss>https://blog.shelike.me/article/482/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>利用虚拟机规模集批量创建Azure虚拟机实例</title>
+		<link>https://blog.shelike.me/article/484</link>
+				<comments>https://blog.shelike.me/article/484#comments</comments>
+				<pubDate>Mon, 28 Dec 2020 14:04:51 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Azure]]></category>
+		<category><![CDATA[教程]]></category>
+
+		<guid isPermaLink="false">https://blog.shelike.me/?p=484</guid>
+				<description><![CDATA[<p>各大云计算平台在创建虚拟机时，都有设置虚拟机数量的选项，比如AWS： 很多小伙伴在初次接触Azure时，觉得Azure的管理界面非 ...</p>
+<p>The post <a href="https://blog.shelike.me/article/484">利用虚拟机规模集批量创建Azure虚拟机实例</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></description>
+								<content:encoded><![CDATA[<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">各大云计算平台在创建虚拟机时，都有设置虚拟机数量的选项，比如AWS：</span></p>
+<p style="text-align: center;"><img title="1609149603731806.png" src="https://blog.shelike.me/wp-content/uploads/image/20201228/1609149603731806.png" alt="image.png" /></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">很多小伙伴在初次接触Azure时，觉得Azure的管理界面非常的不友好，基本功能都没有，想要创建几个虚拟机还得一个个创建。百度搜索“Azure批量创建虚拟机”，都是教怎么使用脚本的，一个非常简单的功能都需要用脚本来实现，非常的繁琐。<br />
+</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">这里就要推荐一个Azure的服务了：虚拟机规模集，用这一服务可以像AWS一样轻松创建多台虚拟机。</span></p>
+<ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">在Azure门户搜索“虚拟机规模集”</span></li>
+<p><img title="1609151783855699.png" src="https://blog.shelike.me/wp-content/uploads/image/20201228/1609151783855699.png" alt="image.png" /></p>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">点击“创建虚拟机规模集”</span></li>
+<p><img title="1609151838392916.png" src="https://blog.shelike.me/wp-content/uploads/image/20201228/1609151838392916.png" alt="image.png" /></p>
+<li style="list-style-type: none;">
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">这就是熟悉的创建虚拟机的界面了，“基本”和“磁盘”项根据自己的需要进行修改。</span></li>
+<p><img title="1609151923863796.png" src="https://blog.shelike.me/wp-content/uploads/image/20201228/1609151923863796.png" alt="image.png" /></p>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">第三项“网络”需要修改，因为默认创建出来的虚拟机没有公网IP。安全组也在这里设置。</span></li>
+<p><img title="1609152045468524.png" src="https://blog.shelike.me/wp-content/uploads/image/20201228/1609152045468524.png" alt="image.png" /><br />
+<img title="1609152093995451.png" src="https://blog.shelike.me/wp-content/uploads/image/20201228/1609152093995451.png" alt="image.png" /></p>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">到这里就出现了实例数量，跟AWS一样直接修改就行</span></li>
+<p><img title="1609152143312115.png" src="https://blog.shelike.me/wp-content/uploads/image/20201228/1609152143312115.png" alt="image.png" /></p>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">在第五项“管理”处关闭“启动诊断”</span></li>
+<p><img title="1609152257394016.png" src="https://blog.shelike.me/wp-content/uploads/image/20201228/1609152257394016.png" alt="image.png" /></p>
+<li><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">其他选项可以全部保持默认。</span></li>
+</ol>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">到这里就可以开始批量创建虚拟机了。是不是很简单？<br />
+</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">顺便吐槽下，Azure是我见过的处理速度最慢的云计算平台，在AWS或谷歌云开台实例也就半分钟，但是Azure这速度...</span></p>
+<p><img title="1609152699533503.png" src="https://blog.shelike.me/wp-content/uploads/image/20201228/1609152699533504.png" alt="image.png" /><img title="1609152843302823.png" src="https://blog.shelike.me/wp-content/uploads/image/20201228/1609152843302823.png" alt="image.png" class="aligncenter"/></p><p>The post <a href="https://blog.shelike.me/article/484">利用虚拟机规模集批量创建Azure虚拟机实例</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></content:encoded>
+							<wfw:commentRss>https://blog.shelike.me/article/484/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+		<item>
+		<title>闲鱼购买虚拟商品维权经历：轻松冻结卖家的闲鱼和支付宝</title>
+		<link>https://blog.shelike.me/article/476</link>
+				<comments>https://blog.shelike.me/article/476#respond</comments>
+				<pubDate>Thu, 24 Dec 2020 10:18:01 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[牛逼]]></category>
+		<category><![CDATA[生活]]></category>
+
+		<guid isPermaLink="false">https://blog.shelike.me/?p=476</guid>
+				<description><![CDATA[<p>在闲鱼买虚拟商品，买家是无敌的（不排除是我运气好） 我9月份在闲鱼买了一个软件的账号密码，11月被改密了。联系卖家，卖家否认。我首 ...</p>
+<p>The post <a href="https://blog.shelike.me/article/476">闲鱼购买虚拟商品维权经历：轻松冻结卖家的闲鱼和支付宝</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></description>
+								<content:encoded><![CDATA[<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">在闲鱼买虚拟商品，买家是无敌的（不排除是我运气好）</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">我9月份在闲鱼买了一个软件的账号密码，11月被改密了。联系卖家，卖家否认。我首先尝试了在闲鱼里面举报欺诈骗钱，提交后显示需要等待1-3个工作日（1天后给我驳回了，说明在这里提交没用）。然后我打电话给闲鱼客服，说买的账号被改了密码，客服让我提交证据，比如聊天记录截图，账号被改密的截图。客服在阿里旺旺里面加了我，我提交了聊天记录截图，也就是卖家否认改密的聊天记录。提交后不到两个小时，收到一条短信：</span></p>
+<p style="text-align: center;"><img class="" title="1608801689824007.png" src="https://blog.shelike.me/wp-content/uploads/image/20201224/1608801689824007.png" alt="image.png" width="500" height="388" /></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">第二天客服打电话给我，说凭证已通过审核，卖家的支付宝和闲鱼都已经被冻结，待纠纷解决后才能解封。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">我点进卖家的主页</span></p>
+<p><img class="aligncenter" title="1608801458849343.png" src="https://blog.shelike.me/wp-content/uploads/image/20201224/1608801458849343.png" alt="image.png" width="500" height="537" /></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">上网搜了一下，卖家的账号会这么显示：</span></p>
+<p style="text-align: center;"><img class="" title="1608803946258852.png" src="https://blog.shelike.me/wp-content/uploads/image/20201224/1608803946258852.png" alt="1.png" width="500" height="892" /></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">然后卖家乖乖给我退款了~ 因为卖家支付宝已被冻结，他使用了别人的支付宝给我转账。<br />
+</span><br />
+<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">因为我不能100%确定是卖家的问题，只能说他找回的可能性非常大，所以不打算把聊天记录放出来，也不打算曝光卖家。</span><br />
+<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">不过有一个聊天记录倒是挺有意思：</span></p>
+<p style="text-align: center;"><img class="" title="1608806353236761.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20201224/1608806311911766.jpg" alt="Screenshot_20201224-182830.jpg" width="501" height="428" /></p>
+<p>&nbsp;<br />
+<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">从头到尾，压根不需要提交什么真正的证据。嗯，我也不敢在闲鱼卖虚拟商品了...</span></p><p>The post <a href="https://blog.shelike.me/article/476">闲鱼购买虚拟商品维权经历：轻松冻结卖家的闲鱼和支付宝</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></content:encoded>
+							<wfw:commentRss>https://blog.shelike.me/article/476/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>免费国内节点CDN jsDelivr踩坑记：小站别用，大文件别用</title>
+		<link>https://blog.shelike.me/article/458</link>
+				<comments>https://blog.shelike.me/article/458#comments</comments>
+				<pubDate>Sun, 29 Nov 2020 09:13:50 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[免费]]></category>
+		<category><![CDATA[原理]]></category>
+
+		<guid isPermaLink="false">https://blog.shelike.me/?p=458</guid>
+				<description><![CDATA[<p>一个偶然的机会，看到某个博客使用了cdn.jsdelivr.net来存放图片，我心想：这哪里的CDN，能有AGA快吗？ping了一 ...</p>
+<p>The post <a href="https://blog.shelike.me/article/458">免费国内节点CDN jsDelivr踩坑记：小站别用，大文件别用</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></description>
+								<content:encoded><![CDATA[<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">一个偶然的机会，看到某个博客使用了cdn.jsdelivr.net来存放图片，我心想：这哪里的CDN，能有AGA快吗？ping了一下，发现竟然是国内节点...打开F12看加载速度，还蛮快。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">于是我折腾了一天，把博客和图床的静态文件全部搬到Github后，用jsDelivr加速。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><strong>先说结论：小站别用，大站可以用。小文件可以用，大文件别用。</strong></span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">首次访问某个文件时，jsDelivr访问Github，将文件下载到AWS S3，再将文件缓存到jsDelivr的新西兰/德国节点，再缓存到国内的网宿CDN节点，再走最佳POP点发送给用户。这么多的流程，这速度有多慢可想而知。</span></p>
+<p><span style="font-size: 14px;"><img title="1606636303989374.png" src="https://blog.shelike.me/wp-content/uploads/image/20201129/1606636303989374.png" alt="infographics.png" /></span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">实测效果太糟糕了：首次加载时，在我的<a href="tu_shelike_default.html" target="_blank" rel="noopener noreferrer" rel="nofollow" >图床</a>看个图片都要加载好几秒，甚至有些图片到了离奇的地步：有些2M左右的图片竟然用了接近两分钟才能加载好，<span style="font-family: 微软雅黑, 'Microsoft YaHei';">有些</span>甚至报504错误，然而用AGA/Azure香港直接秒开（测试宽带：广西电信/四川电信/辽宁联通 均为500Mbps）。</span></p>
+<p style="text-align: center;"><img title="1606639362769628.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20201129/1606639362769628.jpg" alt="QQ截图20201129032140.jpg" /></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">首次加载大文件直接死亡：这一下AGA/Azure就把jsDelivr按在地上摩擦：</span></p>
+<p><span style="font-size: 14px;"><img title="1606637066752447.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20201129/1606637066752447.jpg" alt="QQ截图20201129151048.jpg" /></span></p>
+<p><img title="1606637107877845.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20201129/1606637107877845.jpg" alt="QQ截图20201129151053.jpg" /></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">既然首次加载这么慢，那能不能先自己把所有文件访问一遍，缓存到国内，就一劳永逸了？所以我把博客静态文件用jsDelivr加速后，自己把博客的每篇文章都点一遍，然后再开无痕模式测速，确实比原来快了一些。于是我就把图床也用jsDelivr加速。然而事实是，就算缓存到了国内，小文件可能差别不大，但都是5M-20M的图片的话，<span style="font-family: 微软雅黑, 'Microsoft YaHei';">AGA/Azure还是把jsDelivr按在地上摩擦：</span></span></p>
+<p><span style="font-size: 14px;"><img title="1606637464446626.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20201129/1606637464446626.jpg" alt="QQ截图20201129151107.jpg" /></span></p>
+<p><img title="1606637562553751.png" src="https://blog.shelike.me/wp-content/uploads/image/20201129/1606637562553751.png" alt="image.png" /></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><img title="1606640908316728.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20201129/1606640908316728.jpg" alt="QQ截图20201129143304.jpg" /></span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><img title="1606640921713279.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20201129/1606640921713279.jpg" alt="QQ截图20201129143311.jpg" /></span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">大家可以测一下这几张图。注意先开无痕模式，按F12，点击Network，再复制粘贴网址。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><a href="https://tu.shelike.me/images/2020/11/28/85925180_p0.png" target="_blank" rel="noopener noreferrer" rel="nofollow" >https://tu.shelike.me/images/2020/11/28/85925180_p0.png</a></span><br />
+<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><a href="https://cdn.jsdelivr.net/gh/vpswin1/hosting@master/tu/images/2020/11/28/85925180_p0.png" target="_blank" rel="noopener noreferrer" rel="nofollow" >https://cdn.jsdelivr.net/gh/vpswin1/hosting@master/tu/images/2020/11/28/85925180_p0.png</a></span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">你可能会看到报错信息“Failed to fetch version info for xxxxx”，因为我把仓库删了。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">每个地方的介绍都写</span></p>
+<blockquote><p>jsdelivr使用永久S3存储来确保所有文件可用，即使GitHub发生故障，或者作者删除了存储库或版本。仅当第一次或S3关闭时直接从GitHub获取文件。</p></blockquote>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">想多了。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><a href="https://tu.shelike.me/images/2020/11/28/74886810MiniatureGarden.png" target="_blank" rel="noopener noreferrer" rel="nofollow" >https://tu.shelike.me/images/2020/11/28/74886810MiniatureGarden.png</a></span><br />
+<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><a href="https://cdn.jsdelivr.net/gh/vpswin1/hosting@master/tu/images/2020/11/28/74886810MiniatureGarden.png" target="_blank" rel="noopener noreferrer" rel="nofollow" >https://cdn.jsdelivr.net/.../images/2020/11/28/74886810MiniatureGarden.png</a></span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">（注：受当地网络线路繁忙状况影响，也受当地网宿CDN节点质量影响，有时候测试结果会有出入。根据我对辽宁联通、四川、广西电信的多次测试，对于大文件，AGA/Azure都比已缓存到国内的jsDelivr要快。）</span><br />
+<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">（别用各种测速网站测试。例如17ce，永远都是jsDelivr快，因为这个网站的最大下载文件的上限是1024KB，这一阶段可能AGA/Azure落后于jsDelivr，但后来AGA/Azure的下载速度一直在提升，并超过jsDelivr。然而17ce下载完1024KB时已经结束了测速，并得出错误的结论。）</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">并且，别以为你把博客的所有页面都访问一遍，缓存完成了就一劳永逸了。但事实是这东西有个冷却时间，一旦过了几个小时没人访问，马上从缓存中删除。当再有人访问时，jsDelivr又访问AWS S3提取源文件，又将文件缓存到jsDelivr的新西兰/德国节点，又缓存到国内的网宿节点，又走POP点才送到访客那。别问我怎么知道的，睡前把图床的每张图片都点过一遍，然后开无痕模式测速，速度挺快。一觉醒来回到解放前，哈哈。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">那能不能写一个脚本，一直轮询访问每个文件，以达到缓存不清除的效果？闲得慌，也不是不可以，但是大文件即使缓存了，访问速度也非常慢。小文件确实有一定加速的效果，比如一些js、css、小图片。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">从我的测试来看，jsDelivr并不适合做原图的图床。网上挺多文章写jsDelivr用来做图床。从测试结果来看，小图片可以，电信访问速度和AGA差不多，移动联通访问速度和Azure差不多。大图片或者原图，呵呵。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">四川电信500Mbps，已缓存的小文件，jsDelivr VS AGA，AGA略胜一筹</span></p>
+<p><img title="1606638887407592.png" src="https://blog.shelike.me/wp-content/uploads/image/20201129/1606638887407592.png" alt="QQ图片20201129163153_副本.png" /></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">辽宁联通500Mbps，<span style="font-family: 微软雅黑, 'Microsoft YaHei';"><span style="font-family: 微软雅黑, 'Microsoft YaHei';">已缓存的小文件</span>，<span style="font-family: 微软雅黑, 'Microsoft YaHei';">jsDelivr</span> VS Azure香港，<span style="font-family: 微软雅黑, 'Microsoft YaHei';">jsDelivr完胜，但Azure香港也不差嘛，最大的差距只有0.2秒。</span></span></span></p>
+<p><img title="1606639072520442.png" src="https://blog.shelike.me/wp-content/uploads/image/20201129/1606639072520442.png" alt="QQ图片20201129140651_副本.png" /></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><span style="font-family: 微软雅黑, 'Microsoft YaHei';">结论：小站别用，大站可以用。因为大站一直有人访问，缓存不会清除；而小站有得折腾。小文件可以用，有一定加速效果；大文件别用。</span></span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">所以呢，有了AGA、Azure，基本上所向披靡，根本无需什么CDN。电信解析到AGA，移动联通<span style="font-family: 微软雅黑, 'Microsoft YaHei';">解析到</span>Azure，这应该是不备案的网站除了氪金的IPLC、香港CN2外最强的选择了。已备案的网站当然可以用国内服务器和其他国内CDN，应该会更快。</span></p><p>The post <a href="https://blog.shelike.me/article/458">免费国内节点CDN jsDelivr踩坑记：小站别用，大文件别用</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></content:encoded>
+							<wfw:commentRss>https://blog.shelike.me/article/458/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+		<item>
+		<title>国内服务器免备案建站，支持WebSocket（AWS各种神奇的玩法~）</title>
+		<link>https://blog.shelike.me/article/433</link>
+				<comments>https://blog.shelike.me/article/433#comments</comments>
+				<pubDate>Mon, 19 Oct 2020 14:55:25 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[AWS]]></category>
+		<category><![CDATA[教程]]></category>
+		<category><![CDATA[牛逼]]></category>
+
+		<guid isPermaLink="false">https://blog.shelike.me/?p=433</guid>
+				<description><![CDATA[<p>现在貌似已经彻底用不了了。 2020年12月4日更新：感觉CloudFront越来越不行了，还不如直连。 太神奇了，AWS最近被开 ...</p>
+<p>The post <a href="https://blog.shelike.me/article/433">国内服务器免备案建站，支持WebSocket（AWS各种神奇的玩法~）</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></description>
+								<content:encoded><![CDATA[<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';"><strong>现在貌似已经彻底用不了了。</strong></span></p>
+<hr/>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';"><strong>2020年12月4日更新：</strong>感觉CloudFront越来越不行了，还不如直连。</span></p>
+<hr/>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">太神奇了，AWS最近被开发出各种各样的玩法，比如AGA、CloudFront。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">在一个多月前就有大佬分享这个方法，我担心这种玩法用不了多久就会被封，所以就没写教程。没想到今天依然坚挺，所以决定写一篇详细的教程分享出来。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><span style="font-family: 微软雅黑, 'Microsoft YaHei';">CloudFront<span style="font-family: 微软雅黑, 'Microsoft YaHei';">（以下简称CF）</span></span>是AWS的一个CDN服务，添加网站后可以使用AWS的全球CDN节点，但是CF不会自动解析到中国节点。实际上CF在国内也有很多节点，这时我们手动解析过去，就实现了免备案建站（仅支持Https）。需要加速的境外机器不要求是AWS的机器。</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">加速效果：电信没有AGA（打开谷歌就像打开百度一样）快，移动联通仅次于电信AGA的效果，速度相当快。</span></p>
+<h3><span style="font-family: 微软雅黑, 'Microsoft YaHei';">详细步骤</span></h3>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">首先，在控制台找到CF</span></p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><img title="1600656805542870.png" src="https://blog.shelike.me/wp-content/uploads/image/20200921/1600656805542870.png" alt="image.png" /></span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">点击“创建分配”</span></p>
+<p><img title="1600656981922232.png" src="https://blog.shelike.me/wp-content/uploads/image/20200921/1600656981922232.png" alt="image.png" /></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">选择“入门”</span></p>
+<p><img title="1600657015196952.png" src="https://blog.shelike.me/wp-content/uploads/image/20200921/1600657015196952.png" alt="image.png" /></p>
+<p style="white-space: normal;"><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">在“创建分配”页面中，首先将页面拖到底部，导入SSL证书</span></p>
+<p style="white-space: normal;"><img title="1600657149356175.png" src="https://blog.shelike.me/wp-content/uploads/image/20200921/1600657149356175.png" alt="image.png" /></p>
+<p style="white-space: normal;"><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">导入证书完成后，刷新“创建分配”页面，此处能看到你的<span style="font-family: 微软雅黑, 'Microsoft YaHei';">SSL</span>证书</span></p>
+<p style="white-space: normal;"><img title="1600657463717817.png" src="https://blog.shelike.me/wp-content/uploads/image/20200921/1600657463717817.png" alt="image.png" /></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">然后再进行其他项的配置，仅需按照红框配置，其他保持默认</span></p>
+<p><img title="1603115052702047.png" src="https://blog.shelike.me/wp-content/uploads/image/20201019/1603115052702047.png" alt="image.png" /></p>
+<p><img title="1603115104345085.png" src="https://blog.shelike.me/wp-content/uploads/image/20201019/1603115104345085.png" alt="image.png" /></p>
+<p><img title="1603115129882117.png" src="https://blog.shelike.me/wp-content/uploads/image/20201019/1603115129882117.png" alt="image.png" /><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">创建完成后，用腾讯云解析/DNSPod、Route 53将你的网站<strong>国内解析到CF的中国节点IP，国外解析到你的境外机器</strong>就可以访问了。这三个是很快的国内节点：</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">120.39.213.116 福建省 福州市 电信</span><br />
+<span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">61.179.224.56 山东省 泰安市 联通</span><br />
+<span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">111.6.177.185 河南省 郑州市 移动</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">实测加速后页面秒开。但是由于国内的CF是连接到某个AWS合作商的国外代理服务器（为什么这么说呢？因为我测得访客IP都是国外非亚马逊IP），再访问全球CF再回源，所以真正访问你网站的IP并非访客真实IP。这样会影响到防火墙的正常使用，所以我就没用CF加速网站。</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">所以CF对我来说有什么用呢？当然是WebSocket啦！这里的联通访问AGA、Azure、谷歌云都有丢包且速度一般，通过CF来访问直接跑满带宽。</span></p>
+<h3><span style="font-family: 微软雅黑, 'Microsoft YaHei';">创建可以使用WebSocket的CF分配</span></h3>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">跟前面唯一的不同就是将缓存策略修改为Managed-CachingDisabled，关闭缓存</span></p>
+<p><img title="1603116073368428.png" src="https://blog.shelike.me/wp-content/uploads/image/20201019/1603116073368428.png" alt="image.png" /></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">把域名国内国外都解析到你的机器。打开某代理软件，直接把机器的IP地址改为CF的国内节点</span></p>
+<p><img title="1603116587434810.png" src="https://blog.shelike.me/wp-content/uploads/image/20201019/1603116587434810.png" alt="image.png" /></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">相当于加了个中转，然后你就能体验飞上天的网速了！</span><br />
+<span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">实测移动的节点适合中转AWS，可以自己测试其他云计算平台。</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">为什么我从头到尾都没提到价格呢？因为实在是太便宜了：AWS免费套餐中每月含50G的免费出站流量，超出后费用是0.14 USD/GB。Starter账号不支持这个服务。普通账号可以使用优惠码抵扣。</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">我正愁这么多优惠码怎么用，愁死了</span></p>
+<p><img title="1603122042349010.png" src="https://blog.shelike.me/wp-content/uploads/image/20201019/1603122042349010.png" alt="image.png" /></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">这些优惠码的来源就是我之前提到的<a title="https://aws.amazon.com/cn/activate/" href="https://aws.amazon.com/cn/activate/" target="_blank" rel="noopener noreferrer" rel="nofollow" >AWS初创计划</a>和<a title="https://pages.awscloud.com/adoptf90d_GLOBAL_POC-credits.html" href="https://pages.awscloud.com/adoptf90d_GLOBAL_POC-credits.html" target="_blank" rel="noopener noreferrer" rel="nofollow" >AWS概念验证计划</a>以及AWS Educate已经绝版的关联AWS Account的选项。</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">回到CF，不一定要用上面给的三个节点，可以就近选网速最快的节点（不一定越近越好，取决于测试结果。将代理软件中的地址修改为CF的IP一个个测试，并且有些节点是无法使用的）。</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">以下是一堆节点：</span></p>
+<pre style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">内蒙古巴彦淖尔联通
+1.25.242.133
+1.25.242.174
+1.25.242.203
+1.25.242.204
+1.25.242.169
+云南昆明联通
+14.204.185.244
+14.204.185.207
+湖南衡阳联通
+58.20.179.128
+58.20.179.154
+58.20.179.144
+58.20.179.146
+58.20.179.170
+58.20.179.186
+天津联通
+60.28.100.48
+60.28.100.46
+60.28.100.55
+60.28.100.69
+60.28.100.83
+60.28.100.220
+黑龙江绥化联通
+61.138.61.85
+61.138.61.69
+61.138.61.107
+61.138.61.83
+61.138.61.92
+61.138.61.121
+河南驻马店联通
+61.163.234.50
+61.163.234.64
+61.163.234.66
+61.163.234.73
+61.163.234.102
+61.163.234.88
+黑龙江哈尔滨联通
+61.167.55.23
+61.167.55.236
+61.167.55.228
+61.167.55.229
+61.167.55.230
+山东泰安联通
+61.179.224.55
+61.179.224.52
+61.179.224.68
+61.179.224.57
+61.179.224.56
+浙江温州联通
+103.107.214.139
+103.107.214.123
+103.107.214.95
+103.107.214.113
+103.107.214.115
+103.107.214.155
+天津联通
+111.161.121.21
+111.161.122.76
+111.161.122.123
+111.161.122.159
+111.161.122.121
+111.161.122.122
+江西宜春联通
+113.194.63.170
+重庆联通
+113.207.5.51
+辽宁抚顺联通
+116.138.177.173
+116.138.177.175
+116.138.177.186
+116.138.177.170
+116.138.177.174
+吉林通化联通
+119.52.228.66
+119.52.228.67
+119.52.228.73
+119.52.228.62
+119.52.228.65
+河北保定联通
+119.249.96.66
+119.249.96.82
+119.249.96.80
+119.249.96.89
+119.249.96.104
+119.249.96.118
+广西南宁联通
+121.31.43.214
+121.31.43.211
+湖北武汉联通
+122.190.68.45
+122.190.68.42
+陕西宝鸡联通
+123.138.203.115
+123.138.203.113
+123.138.203.126
+123.138.203.110
+123.138.203.114
+山西朔州联通
+124.167.217.82
+124.167.217.59
+124.167.217.73
+124.167.217.75
+124.167.217.97
+124.167.217.235
+124.167.217.236
+124.167.217.111
+124.167.217.243
+124.167.217.237
+124.167.217.231
+福建泉州联通
+175.43.120.63
+175.43.120.221
+175.43.120.195
+175.43.120.197
+175.43.120.205
+175.43.120.179
+四川成都联通
+175.153.7.85
+175.153.7.84
+175.153.7.86
+175.153.7.81
+175.153.7.77
+上海联通
+211.95.52.157
+211.95.52.172
+211.95.53.39
+211.95.53.53
+211.95.53.62
+211.95.53.55
+河北邯郸联通
+221.193.246.48
+221.193.246.5
+221.193.246.3
+221.193.246.83
+221.193.246.68
+221.193.246.97
+江苏南通联通
+36.156.74.48
+36.156.74.64
+36.156.74.62
+36.156.74.86
+36.156.74.71
+36.156.74.100
+
+Ucloud-北京BGP
+106.75.4.162
+106.75.16.214
+106.75.34.130
+106.75.33.193
+106.75.90.226
+106.75.99.152
+106.75.119.188
+106.75.120.201
+Ucloud-广州BGP
+106.75.130.199
+106.75.136.107
+106.75.139.38
+106.75.137.7
+106.75.141.189
+
+浙江杭州移动
+111.1.59.115
+111.1.59.150
+111.1.59.152
+111.1.59.213
+111.1.59.184
+河南郑州移动
+111.6.176.229
+111.6.176.245
+111.6.176.234
+111.6.176.239
+111.6.177.184
+111.6.177.138
+111.6.177.183
+111.6.177.185
+111.6.176.235
+111.6.184.113
+111.6.241.70
+111.7.109.85
+111.7.109.169
+111.7.109.159
+111.7.109.143
+111.7.109.161
+111.7.109.185
+青海西宁移动
+111.12.146.155
+111.12.146.158
+黑龙江哈尔滨移动
+111.43.178.60
+111.43.178.54
+111.43.178.55
+111.43.178.58
+111.43.178.59
+湖北武汉移动
+111.47.221.14
+111.47.222.116
+111.47.222.102
+111.47.222.87
+111.47.222.205
+111.47.222.191
+111.47.222.207
+111.47.222.145
+111.47.222.144
+111.47.222.152
+111.48.88.88
+宁夏银川移动
+111.51.66.0
+111.51.66.7
+111.51.66.2
+111.51.66.8
+111.51.66.6
+111.51.66.214
+111.51.66.202
+
+福建福州电信
+27.148.145.168
+27.148.145.166
+27.148.145.167
+27.148.145.163
+27.148.145.201
+吉林长春电信
+36.49.16.79
+36.49.16.102
+36.49.16.95
+36.49.16.117
+36.49.16.93
+宁夏中卫电信
+36.103.232.1
+36.103.232.7
+36.103.232.2
+36.103.232.11
+36.103.232.185
+36.103.232.181
+36.103.232.177
+36.103.232.187
+黑龙江哈尔滨电信
+42.101.78.103
+42.101.78.100
+江苏扬州电信
+58.220.73.23
+58.220.73.72
+58.220.73.71
+58.220.73.70
+58.220.73.67
+江苏南通电信
+58.221.56.131
+58.221.56.129
+58.221.56.139
+58.221.56.113
+58.221.56.155
+58.221.56.182
+江苏泰州电信
+58.222.41.80
+58.222.41.84
+58.222.41.83
+58.222.41.85
+59.38.192.78
+辽宁沈阳电信
+59.44.30.94
+59.56.27.52
+59.56.27.66
+59.56.27.68
+59.56.27.90
+59.56.27.75
+59.56.27.104
+安徽合肥电信
+61.132.231.57
+江苏南通电信
+61.147.226.39
+陕西渭南电信
+61.150.91.91
+61.150.91.53
+61.150.91.76
+61.150.91.67
+61.150.91.69
+61.150.91.105
+湖北襄阳电信
+61.184.9.157
+61.184.9.176
+61.184.9.183
+61.184.9.184
+61.184.9.182
+云南昆明电信
+106.60.64.183
+106.60.64.184
+106.60.64.180
+106.60.64.185
+福建福州电信
+106.122.255.166
+106.122.255.227
+106.122.255.221
+106.122.255.226
+110.157.233.110
+110.157.233.92
+110.157.233.118
+110.157.233.108
+110.157.233.134
+110.157.233.150
+四川绵阳电信
+110.186.57.111
+广西南宁电信
+113.16.208.173
+113.16.208.175
+113.16.208.176
+113.16.208.170
+113.16.212.93
+广东江门电信
+113.96.140.37
+113.96.140.205
+113.96.140.237
+113.96.140.234
+113.96.140.238</pre>
+<p>&nbsp;</p>
+<hr />
+<p><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;">节点来源：</span><a style="font-family: arial, helvetica, sans-serif;" href="https://www.hostloc.com/thread-742893-1-1.html" target="_blank" rel="noopener noreferrer" rel="nofollow" ><span style="font-size: 14px; font-family: arial, helvetica, sans-serif;">AWS CloudFront 中国节点</span></a></p><p>The post <a href="https://blog.shelike.me/article/433">国内服务器免备案建站，支持WebSocket（AWS各种神奇的玩法~）</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></content:encoded>
+							<wfw:commentRss>https://blog.shelike.me/article/433/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+							</item>
+		<item>
+		<title>打开谷歌就像打开百度一样快：AWS Global Accelerator</title>
+		<link>https://blog.shelike.me/article/416</link>
+				<comments>https://blog.shelike.me/article/416#comments</comments>
+				<pubDate>Wed, 15 Jul 2020 09:35:13 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[AWS]]></category>
+		<category><![CDATA[教程]]></category>
+		<category><![CDATA[牛逼]]></category>
+
+		<guid isPermaLink="false">https://blog.shelike.me/?p=416</guid>
+				<description><![CDATA[<p>2021年5月1日更新：AGA彻底凉了~ 入口不再是香港，而是新加坡了。测试IP：75.2.100.1 机器是AWS香港，我家是广 ...</p>
+<p>The post <a href="https://blog.shelike.me/article/416">打开谷歌就像打开百度一样快：AWS Global Accelerator</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></description>
+								<content:encoded><![CDATA[<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';"><strong>2021年5月1日更新：</strong>AGA彻底凉了~ 入口不再是香港，而是新加坡了。测试IP：75.2.100.1</span></p>
+<hr/>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">机器是AWS香港，我家是广西500兆电信宽带，SpeedTest测速结果：</span></p>
+<p><img title="AWS Global Accelerator SpeedTest" src="https://blog.shelike.me/wp-content/uploads/image/20210211/1613026508257448.png" alt="AWS Global Accelerator SpeedTest" /></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">直接跑满带宽！终于找到能让我跑满带宽的线路了！</span><br />
+<span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">你可能会疑惑500兆宽带为什么能跑出超过理论值的速度，因为运营商的限速是软件限速，没有限得那么死。</span></p>
+<p><img title="1594782819841325.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594782819841325.jpg" alt="QQ截图20200715012732.jpg" /></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">高峰期三千五百次Ping，零丢包。</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';"><strong>2021年1月21日更新：</strong>随着各大机场的滥用，AGA已经大不如前，加速游戏是不可能的了。但是拿来上网可是最好的选择~ 对于自建加速器与收费加速器的比较，请看<a href="https://blog.shelike.me/article/614">https://blog.shelike.me/article/614</a>。</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">用这个节点玩了一个多月的GTA5，我感觉相当于UU加速器中上水平的节点。UU的很多节点经常遇到的“加入战局时出错”、“加入战局时发生超时错误”、“保存失败，无法连接Rockstar游戏服务”，AWS Global Accelerator很少遇到，不过有些时间存在丢包现象。总体体验和UU差不多，秒杀腾讯加速器。</span></p>
+<p><img title="1594751825577476.jpg" src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594751825577476.jpg" alt="QQ截图20200715012656.jpg" /></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">其他大佬的测速：</span></p>
+<p><img title="2267E65AC195547BE2ABC2C0DD002909.jpg" src="https://blog.shelike.me/wp-content/uploads/2020/10/2267E65AC195547BE2ABC2C0DD002909.jpg" alt="2267E65AC195547BE2ABC2C0DD002909.jpg" /></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">是不是 <span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px; text-decoration: line-through;">饥渴难耐</span> 迫不及待了？</span></p>
+<p>&nbsp;</p>
+<h2><span style="font-size: 20px; font-family: 微软雅黑, 'Microsoft YaHei';">开始使用AWS Global Accelerator</span></h2>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">先说明：电信飞起，联通一般，移动别看了。</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">现在的AWS Educate优惠码可以抵扣AGA的费用，0.01 USD/GB，比国内的阿里云CDN（0.18元/GB）还要便宜。但是，这个加速器一个月固定收取18美元。</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">要是不想给钱呢？在<a title="https://aws.amazon.com/cn/activate/" href="https://aws.amazon.com/cn/activate/" target="_blank" rel="noopener noreferrer" rel="nofollow" >AWS初创计划</a>中随便填写个公司，就有可能获得$1000的抵扣金额。</span></p>
+<h3><span style="font-size: 18px; font-family: 微软雅黑, 'Microsoft YaHei';">加速原理</span></h3>
+<p><span style="font-size: 14px;"><img src="https://d1.awsstatic.com/r2018/b/ubiquity/global-accelerator-how-it-works.feb297eb78d8cc55205874a1691e0ea2bc8bdbf1.png" /></span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">简单来说就是：流量通过最近的AWS边缘节点 —&gt; AWS全球加速器 （内部：流量通过AWS骨干网 —&gt; 最佳终端节点组） —&gt; 实例</span></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">直接连接香港实例会绕日本，而通过加速器的话直接走香港进入实例。AGA走的是优化的163线路，优先级比一样是163的Azure和谷歌云高。</span></p>
+<h3><span style="font-size: 18px; font-family: 微软雅黑, 'Microsoft YaHei';">创建加速器</span></h3>
+<ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+<li><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">首先你需要在香港区域有一个实例，接下来将创建一个加速器来加速它。</span>
+<p><img title="1594781984744911.png" src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594781984744911.png" alt="image.png" /></li>
+<li><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">在AWS服务中找到Global Accelerator</span><span style="font-size: 14px;">
+<p><img title="1594781839776794.png" src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594781839776794.png" alt="image.png" /></span></li>
+<li><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">点击创建加速器</span><span style="font-size: 14px;">
+<p><img title="1594782157653839.png" src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594782157653839.png" alt="image.png" /></span></li>
+<li><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">输入加速器名称</span><span style="font-size: 14px;">
+<p><img title="1594782271510261.png" src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594782271510261.png" alt="image.png" /></span></li>
+<li><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">添加监听器的端口范围</span><span style="font-size: 14px;">
+<p><img title="1594782352811696.png" src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594782352811696.png" alt="image.png" /></span></li>
+<li><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">分别设置两个监听器的区域为香港（你的实例在哪，此处就选哪），权重无需修改</span><span style="font-size: 14px;">
+<p><img title="1594782446830133.png" src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594782446830133.png" alt="image.png" /></span></li>
+<li><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">最后一步，将加速器与实例绑定，点击创建加速器</span>
+<p><img src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594785420898471.png" title="1594785420898471.png" alt="image.png"/><br />
+<img src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594785678667770.png" title="1594785678667770.png" alt="image.png"/></p>
+<li><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">简单几步就创建成功了，记录下加速器的IP</span>
+<p><img title="1594782612210727.png" src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594782612210727.png" alt="image.png" /></li>
+</ol>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">加速器的两个IP是亚马逊的任播节点，不属于任何一个地区，会根据你的位置选择最佳路由。</span></p>
+<p><img title="1594783169716939.png" src="https://blog.shelike.me/wp-content/uploads/image/20200715/1594783169716939.png" alt="image.png" /></p>
+<p><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">这两个IP都可以连接到你的实例，直接将游戏加速器Netch或者某软件的服务器IP修改为其中一个就可以畅游世界了。</span></p>
+<p style="text-align: center;white-space: normal;"><img title="FC4286F040C9769B095F9E52EC311E29.jpg" src="https://blog.shelike.me/wp-content/uploads/2020/10/FC4286F040C9769B095F9E52EC311E29.jpg" alt="FC4286F040C9769B095F9E52EC311E29.jpg" /></p>
+<p style="white-space: normal;"><span style="font-size: 16px; font-family: 微软雅黑, 'Microsoft YaHei';">顺便测了下某视频网站，4K秒加载，完美秒杀所有的云计算平台吧喂！（这图是宽带200Mbps时测的）</span></p>
+<p>&nbsp;</p>
+<hr/>
+<p>定价：<a title="https://aws.amazon.com/cn/global-accelerator/pricing/" href="https://aws.amazon.com/cn/global-accelerator/pricing/" target="_blank" rel="noopener noreferrer" rel="nofollow" >https://aws.amazon.com/cn/global-accelerator/pricing/</a><br />
+官方文档：<a title="https://docs.aws.amazon.com/global-accelerator/latest/dg/getting-started.html" href="https://docs.aws.amazon.com/global-accelerator/latest/dg/getting-started.html" target="_blank" rel="noopener noreferrer" rel="nofollow" >https://docs.aws.amazon.com/global-accelerator/latest/dg/getting-started.html</a><br />
+任播技术：<a title="https://blog.csdn.net/mudawei1/article/details/101547570" href="https://blog.csdn.net/mudawei1/article/details/101547570" target="_blank" rel="noopener noreferrer" rel="nofollow" >https://blog.csdn.net/mudawei1/article/details/101547570</a></p><p>The post <a href="https://blog.shelike.me/article/416">打开谷歌就像打开百度一样快：AWS Global Accelerator</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></content:encoded>
+							<wfw:commentRss>https://blog.shelike.me/article/416/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+							</item>
+		<item>
+		<title>如何在家快乐地刷网课——超星学习通自动签到 + 互评1000分 + 自动刷课答题</title>
+		<link>https://blog.shelike.me/article/399</link>
+				<comments>https://blog.shelike.me/article/399#comments</comments>
+				<pubDate>Fri, 27 Mar 2020 08:47:14 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[大学]]></category>
+		<category><![CDATA[教程]]></category>
+		<category><![CDATA[牛逼]]></category>
+		<category><![CDATA[生活]]></category>
+
+		<guid isPermaLink="false">https://blog.shelike.me/?p=399</guid>
+				<description><![CDATA[<p>2020年11月13日更新：推荐这个脚本：https://github.com/mkdir700/chaoxing_auto_si ...</p>
+<p>The post <a href="https://blog.shelike.me/article/399">如何在家快乐地刷网课——超星学习通自动签到 + 互评1000分 + 自动刷课答题</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></description>
+								<content:encoded><![CDATA[<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;"><strong>2020年11月13日更新：</strong>推荐这个脚本：<a style="white-space: normal; font-family: 微软雅黑, 'Microsoft YaHei'; text-decoration-line: none;" href="https://github.com/mkdir700/chaoxing_auto_sign" target="_blank" rel="noopener noreferrer" rel="nofollow" >https://github.com/mkdir700/chaoxing_auto_sign</a></span><br />
+<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">支持所有的签到方式：普通签到、手势签到（不需要填写手势）、二维码签到（不需要扫描二维码）、位置签到（位置可自定义）、拍照签到（图片建议用下面的），没有漏签。若API版无法运行，本地版也不错。</p>
+<p><span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">拍照签到的图片可以用这张：</span><br />
+<img src="https://blog.shelike.me/wp-content/uploads/image/20201113/1605264293572948.jpg" class="aligncenter" title="1605264293572948.jpg" alt="1.jpg"/><br />
+<span style="font-family: 微软雅黑, 'Microsoft YaHei'; font-size: 16px;">文字改成“加载失败”什么的也可以。</span></p>
+<hr />
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">在家过得真舒服，一觉睡到自然醒。在这里奉劝各位，年轻人不要熬夜，熬夜有伤身体，建议直接通宵。</span></p>
+<h3><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px;">1.&nbsp;超星尔雅学习通自动签到</span></h3>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">要是学校要求的签到仅仅是普通签到，而无需拍照签到位置签到等等，这里推荐一个 Github 上的脚本：<a href="https://github.com/lusao-xg/ChaoXingSign" target="_blank" style="white-space: normal; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; text-decoration-line: none;" rel="noopener noreferrer" rel="nofollow" >https://github.com/lusao-xg/ChaoXingSign</a></span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">为什么推荐这个脚本呢，因为我使用过在 Github 中 Star 数最高的脚本，支持所有的签到方式，但有过3次漏签，都是老师设置3分钟时限签到这种，超过10分钟的都签到成功，不知道是不是个例。要是你学校要求拍照签到等，可以在 Github 找其他脚本</span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px; text-decoration: none;">：</span><a href="https://github.com/search?q=%E8%B6%85%E6%98%9F+%E7%AD%BE%E5%88%B0" target="_blank" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px; text-decoration: none;" rel="noopener noreferrer" rel="nofollow" ><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">https://github.com/search</span></a></p>
+<p style="white-space: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">这个脚本前期配置比较麻烦，需要输入每个课程和班级的id，但这是一劳永逸的。id可以在电脑版超星的签到任务中找，点开签到任务，网址就包括“classId”和“courseId”。SCHOOL_ID 不需要修改，USERNAME 填手机号，别填学号。</span></p>
+<p style="white-space: normal;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">按照这样的格式修改 config.py：</span></p>
+<pre class="brush:bash;toolbar:false">#&nbsp;需要签到的课程信息，按照这样的格式来
+COURSE_ID&nbsp;=&nbsp;[
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;courseId&quot;:&nbsp;&quot;210000000&quot;,&nbsp;&nbsp;#&nbsp;课程1
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;classId&#39;:&nbsp;&quot;22414000&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;	&quot;courseId&quot;:&nbsp;&quot;210000001&quot;,&nbsp;&nbsp;#&nbsp;课程2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;classId&#39;:&nbsp;&quot;14178001&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;	&quot;courseId&quot;:&nbsp;&quot;210000002&quot;,&nbsp;&nbsp;#&nbsp;课程3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#39;classId&#39;:&nbsp;&quot;21319002&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;},
+]</pre>
+<p style="white-space: normal;"><span style="font-size: 16px; font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"></span><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">然后再设置计划任务，<span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">挂在阿里云免费一年的服务器（</span><a href="https://developer.aliyun.com/adc/student/" style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; white-space: normal;" target="_blank"  rel="nofollow" >【阿里云】高校学生“在家实践”计划</a><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">）</span></span></p>
+<pre class="brush:php;toolbar:false;">#&nbsp;crontab&nbsp;-e</pre>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">按照自己的要求修改并添加这一行：</span></p>
+<pre class="brush:bash;toolbar:false">*/2&nbsp;8,9,10,11,12,13,14,15,16,17,18,19&nbsp;*&nbsp;*&nbsp;1-5&nbsp;/root/qiandao/start.py&nbsp;&gt;&gt;&nbsp;/root/qiandao/fuckchaoxing.log&nbsp;2&gt;&amp;1</pre>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">*/2 8,9,10,11,12,13,14,15,16,17,18,19 * * * 中的&nbsp;<span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">*/2 表示每两分钟执行一次，<span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">8,9,10,11,12,13,14,15,16,17,18,19 表示从 8-19 点每小时都执行</span></span></span><br />
+<span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">/root/qiandao/start.py 表示脚本的路径，1-5 表示周一到周五，/root/qiandao/fuckchaoxing.log 表示脚本的日志输出到哪。</span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">然后脚本每两分钟会检查一次有没有签到任务，有的话就会自动完成签到。So good！</span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;"><br /></span></p>
+<h3><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px;">2. 互评1000分</span></h3>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">我偶然发现了个很有意思的漏洞，别说1000分，一亿分都没问题。</span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;"><img src="https://blog.shelike.me/wp-content/uploads/image/20200327/1585291184597648.png" title="1585291184597648.png" alt="微信图片_20200327143606.png"/></span></p>
+<p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;"><img src="https://blog.shelike.me/wp-content/uploads/image/20200327/1585291203123295.jpg" title="1585291203123295.jpg" alt="微信图片_20200327143614.jpg" width="400" height="710"/></span><br />
+<span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 14px;">图中的0分是有人没评，默认显示0但不计入成绩</span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">前提是需要这样的互评作业：</span></p>
+<p style="text-align:center"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;"><img src="https://blog.shelike.me/wp-content/uploads/image/20200327/1585290936983870.png" title="1585290936983870.png" alt="image.png"/></span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">在电脑版的超星网站上，找到对应课程的待批作业，然后就有批改的按钮。输入100分，点击提交按钮，此时用 Burp Suite 抓包，把抓到的包中POST区域所有的“100”改成你想要的分数，比如99999999，你开心就好。</span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;"><br /></span></p>
+<h3><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 18px;">3. 自动刷课答题</span></h3>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">这里看我以前发表的文章：<a href="https://blog.shelike.me/index.php/2018/09/15/%e3%80%90%e6%96%b0%e3%80%91%e8%87%aa%e5%8a%a8%e5%88%b7%e8%af%be%e8%84%9a%e6%9c%ac/" target="_blank" rel="noopener noreferrer">【新】自动刷课脚本</a><br /></span></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">要注意的是，答主观题时务必关闭这个脚本，否则这脚本要是遇到搜不到的题，就会给你答“不会”并提交。另外建议完整阅读代码开头的几段，根据自己的取舍来决定是否要开启自动答题功能，题库可能会返回“不会”、“略”这样的答案，选择题若搜不到答案会随机选一个。我的建议是刷视频时打开，做作业（特指“作业”栏目，不包括刷视频遇到的题）时盯着，要是出现问题再关闭。</span></p>
+<p></p>
+<p></p>
+<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">好了，接下来就可以轻轻松松地躺在床上睡觉了。祝各位挂科！不用谢！</span></p><p>The post <a href="https://blog.shelike.me/article/399">如何在家快乐地刷网课——超星学习通自动签到 + 互评1000分 + 自动刷课答题</a> first appeared on <a href="blog_shelike_default.html">谜之屋</a>.</p>]]></content:encoded>
+							<wfw:commentRss>https://blog.shelike.me/article/399/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+							</item>
+	</channel>
+</rss>

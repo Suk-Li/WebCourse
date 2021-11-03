@@ -1,0 +1,29 @@
+body{
+    background-attachment: fixed;
+    background: url("../img/bg.jpg");
+    background-size: 100% auto;
+}
+table{
+    margin-left: 8%;
+    text-align: center;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    width: 80%;
+}
+table td,th{
+    border: 1px solid gray;
+    height: 20px;
+}
+table tr:nth-child(2n+1),table tfoot tr td{
+    background: #ffffff00;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px
+}
+table tr:nth-child(2n){
+    background: #ffffff36;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px
+}
+iframe{
+    border: 0px;
+}

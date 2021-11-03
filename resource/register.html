@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layui.css">
+    <script src="layui.js"></script>
+    <script src="jquery-1.8.0.js"></script>
+    <script src="register.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="layui-bg" style="padding: 30px;">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-panel">
+                    <div style="padding: 30px 30px;">
+                      <form class="layui-form" action="register.html" lay-filter="example">
+                        <div class="layui-form-item">
+                          <label class="layui-form-label">用户名</label>
+                          <div class="layui-input-block">
+                            <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                          </div>
+                        </div>
+                        <div class="layui-form-item">
+                          <label class="layui-form-label">学号</label>
+                          <div class="layui-input-block">
+                            <input type="text" name="usercode" lay-verify="usercode" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                          </div>
+                        </div>
+                        <div class="layui-form-item">
+                          <label class="layui-form-label">密码</label>
+                          <div class="layui-input-block">
+                            <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                          </div>
+                        </div>
+                        
+                        <div class="layui-form-item">
+                          <label class="layui-form-label">班级</label>
+                          <div class="layui-input-block">
+                            <select name="class" lay-filter="class">
+                              <option value=""></option>
+                              <option value="0">计算机Z1911</option>
+                              <option value="1">计算机Z1912</option>
+                            </select>
+                          </div>
+                        </div>
+                        
+                        <div class="layui-form-item">
+                          <label class="layui-form-label">复选框</label>
+                          <div class="layui-input-block">
+                            <input type="checkbox" name="like[write]" title="写作">
+                            <input type="checkbox" name="like[read]" title="阅读">
+                            <input type="checkbox" name="like[daze]" title="发呆">
+                          </div>
+                        </div>
+                        
+                        <div class="layui-form-item">
+                          <label class="layui-form-label">生日</label>
+                          <div class="layui-input-block">
+                              <input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input" lay-key="1">
+                          </div>
+                        </div>
+                        
+                        <div class="layui-form-item">
+                          <label class="layui-form-label">性别</label>
+                          <div class="layui-input-block">
+                            <input type="radio" name="sex" value="男" title="男" checked="">
+                            <input type="radio" name="sex" value="女" title="女">
+                          </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                          <label class="layui-form-label">自我介绍</label>
+                          <div class="layui-input-block">
+                            <textarea placeholder="这个人很懒，什么都没有留下" class="layui-textarea" name="desc"></textarea>
+                          </div>
+                        </div>
+                       
+                        <div class="layui-form-item">
+                          <div class="layui-input-block">
+                            <button type="button" class="layui-btn layui-btn-normal" id="LAY-component-form-setval">赋值</button>
+                            <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">立即注册</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

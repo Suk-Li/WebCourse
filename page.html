@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="/layui/layui.js"></script>
+    <script src="js/jquery-1.8.0.js"></script>
+    <script src="js/index.js"></script>
+    <title>表格</title>
+</head>
+
+<body>
+    <ul class="layui-nav" lay-filter="">
+        <li class="layui-nav-item layui-this"><a href="page.html">1.表格</a></li>
+        <li class="layui-nav-item"><a href="form.html">2.表单</a></li>
+        <li class="layui-nav-item"><a href="index.html">3.页面</a></li>
+    </ul>
+
+    <script>
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+    </script>
+
+    <div class="layui-main" style="width: 100%;">
+
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend>表格</legend>
+        </fieldset>
+
+        <div class="layui-bg-gray" style="padding: 30px;">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md12">
+                    <div class="layui-panel">
+                        <div style="padding: 50px 30px;">
+                            <table cellspacing="0" cellpadding="0" border="0" class="layui-table">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>班级</th>
+                                        <th>学号</th>
+                                        <th>姓名</th>
+                                        <th>年龄</th>
+                                        <th>联系方式</th>
+                                        <th>备注</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+
+                                </tbody>
+                                <tfoot>
+                                        <tr>
+                                            <td colspan="7">以上为第二题居中表格</td>
+                                        </tr>
+                                </tfoot>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <blockquote class="layui-elem-quote" style="margin-top: 30px;">
+            啥都可以讨论，我的游乐娃子。
+        </blockquote>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+
+table tr:nth-child(2n+1),table tfoot tr td{
+    background: #ffffff00;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px
+}
+table tr:nth-child(2n){
+    background: #a7a7a736;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px
+}
+iframe{
+    border: 0px;
+}
